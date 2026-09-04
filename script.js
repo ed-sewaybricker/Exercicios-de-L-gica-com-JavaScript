@@ -60,25 +60,44 @@ function tabuada(n1) {
 }
 
 function notas(letra) {
+    // let escolha = letra.toLowerCase();
+    // const span = document.getElementById("nota");
+
+    // switch (escolha) {
+    //     case "c":
+    //         return span.innerHTML = "Dó";
+    //     case "d":
+    //         return span.innerHTML = "Ré";
+    //     case "e":
+    //         return span.innerHTML = "Mi";
+    //     case "f":
+    //         return span.innerHTML = "Fá";
+    //     case "g":
+    //         return span.innerHTML = "Sol";
+    //     case "a":
+    //         return span.innerHTML = "Lá";
+    //     case "b":
+    //         return span.innerHTML = "Si";
+    //     default:
+    //         return span.innerHTML = "Escolha uma entre aquelas letras.";
+    // }
+
     let escolha = letra.toLowerCase();
     const span = document.getElementById("nota");
+    const notas = {
+        "c": "Dó",
+        "d": "Ré",
+        "e": "Mi",
+        "f": "Fá",
+        "g": "Sol",
+        "a": "Lá",
+        "b": "Si",
+    };
 
-    switch (escolha) {
-        case "c":
-            return span.innerHTML = "Dó";
-        case "d":
-            return span.innerHTML = "Ré";
-        case "e":
-            return span.innerHTML = "Mi";
-        case "f":
-            return span.innerHTML = "Fá";
-        case "g":
-            return span.innerHTML = "Sol";
-        case "a":
-            return span.innerHTML = "Lá";
-        case "b":
-            return span.innerHTML = "Si";
-        default:
-            return span.innerHTML = "Escolha uma entre aquelas letras.";
+    if (!Object.hasOwn(notas, escolha)) {
+        return span.innerHTML = "Escolha uma entre aquelas letras.";
     }
+
+    const nota = notas[escolha];
+    return span.innerHTML = nota;
 }
