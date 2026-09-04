@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h2>Media Aritmética</h2>
+    <input type="number" id="media1" placeholder="Número 1">
+    <input type="number" id="media2" placeholder="Número 2">
+    <input type="number" id="media3" placeholder="Número 3">
+    <button type="button"
+        onclick="mediaAritmetica(document.getElementById('media1').value, document.getElementById('media2').value, document.getElementById('media3').value)">Média
+        Aritmética</button>
+    <span id="mediaAritmetica"></span>
+
+    <h2>Par ou Ímpar</h2>
+    <input type="number" id="numParImpar" placeholder="Número">
+    <button type="button" onclick="parImpar(document.getElementById('numParImpar').value)">Par ou Ímpar</button>
+    <span id="parImpar"></span>
+
+    <h2>Maior número</h2>
+    <input type="number" id="maior1" placeholder="Número 1">
+    <input type="number" id="maior2" placeholder="Número 2">
+    <input type="number" id="maior3" placeholder="Número 3">
+    <button type="button"
+        onclick="maiorNumero(document.getElementById('maior1').value, document.getElementById('maior2').value, document.getElementById('maior3').value)">Maior</button>
+    <span id="maiorNumero"></span>
+
+    <h2>Potência</h2>
+    <input type="number" id="base" placeholder="Base">
+    <input type="number" id="exponencial" placeholder="Exponencial">
+    <button type="button"
+        onclick="potencia(document.getElementById('base').value, document.getElementById('exponencial').value)">Potência</button>
+    <span id="potencia"></span>
+
+    <h2>Tabuada</h2>
+    <input type="number" id="numTabuada" placeholder="Número">
+    <button type="number" onclick="tabuada(document.getElementById('numTabuada').value)">Tabuada</button>
+    <ul id="tabuada"></ul>
+
+    <h2>Notas Musicais</h2>
+    <input type="text" id="letra" placeholder="C,D,E,F,G,A,B">
+    <button type="button" onclick="notas(document.getElementById('letra').value)">Nota</button>
+    <span id="nota"></span>
+    <script src="script.js"></script>
+</body>
+
+</html>
