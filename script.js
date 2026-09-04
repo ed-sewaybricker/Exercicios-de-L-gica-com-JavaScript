@@ -61,23 +61,24 @@ function tabuada(n1) {
 
 function notas(letra) {
     let escolha = letra.toLowerCase();
+    const span = document.getElementById("nota");
 
     switch (escolha) {
         case "c":
-            return document.getElementById("nota").innerHTML = "Dó";
+            return span.innerHTML = "Dó";
         case "d":
-            return document.getElementById("nota").innerHTML = "Ré";
+            return span.innerHTML = "Ré";
         case "e":
-            return document.getElementById("nota").innerHTML = "Mi";
+            return span.innerHTML = "Mi";
         case "f":
-            return document.getElementById("nota").innerHTML = "Fá";
+            return span.innerHTML = "Fá";
         case "g":
-            return document.getElementById("nota").innerHTML = "Sol";
+            return span.innerHTML = "Sol";
         case "a":
-            return document.getElementById("nota").innerHTML = "Lá";
+            return span.innerHTML = "Lá";
         case "b":
-            return document.getElementById("nota").innerHTML = "Si";
+            return span.innerHTML = "Si";
         default:
-            return document.getElementById("nota").innerHTML = "Escolha uma entre aquelas letras.";
+            return span.innerHTML = "Escolha uma entre aquelas letras.";
     }
 }
